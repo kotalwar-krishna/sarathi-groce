@@ -92,6 +92,28 @@ section{
   line-height: 1.8;
 }
 
+.heading{
+  text-align: center;
+  padding:2rem 0;
+  padding-bottom: 3rem;
+  font-size: 3.5rem;
+  color:var(--black);
+}
+
+.heading span{
+  background: var(--orange);
+  color:#fff;
+  display: inline-block;
+  padding:.5rem 3rem;
+}
+
+
+.features .box-container{
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap:3rem;
+}
 
 
 
@@ -159,6 +181,10 @@ section{
 
   html{
       font-size: 7px;
+  }
+
+  .heading{
+    font-size: 2rem;
   }
 
 }
