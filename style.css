@@ -4,15 +4,18 @@
 @import url(./home-css/navigation_CSS_home.css);
 
 :root{
+  /* colors */
     --orange:#ff7800;
     --black:#130f40;
     --light-grey-color:#666;
     --white:#fff;
     --body-background-color:#eee;
+    /* line height */
+    --line-height-md:1.8;
+    /* border redius */
+    --border-redius-regular: 0.5rem;
+    /* other */
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
-    --border:.2rem solid rgba(0,0,0,.1);
-    --outline:.1rem solid rgba(0,0,0,.1);
-    --outline-hover:.2rem solid var(--black);
 }
 
 *{
@@ -47,7 +50,7 @@ section{
   display: inline-block;
   padding:.8rem 3rem;
   font-size: 1.7rem;
-  border-radius: .5rem;
+  border-radius: var(--border-redius-regular);
   border:.2rem solid var(--black);
   color:var(--black);
   cursor: pointer;
@@ -89,7 +92,7 @@ section{
   color:var(--black);
   font-size: 1.7rem;
   padding:1rem 0;
-  line-height: 1.8;
+  line-height: var(--line-height-md);
 }
 
 .heading{
@@ -102,9 +105,9 @@ section{
 
 .heading span{
   background: var(--orange);
-  color:#fff;
+  color:var(--white);
   display: inline-block;
-  padding:.5rem 3rem;
+  padding: 0.5rem 3rem;
 }
 
 
@@ -113,6 +116,80 @@ section{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap:3rem;
+}
+
+.groce-footer{
+  background: #fff;
+  
+}
+
+.groce-footer .groce-footer-container{
+  margin: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap:1.5rem;
+}
+
+.groce-footer .groce-footer-container .box h3{
+  font-size: 1.5rem;
+  color:var(--black);
+  padding:0.5rem 0;
+}
+
+.groce-footer .groce-footer-container .box h3 i{
+  color:var(--orange);
+}
+
+.groce-footer .groce-footer-container .box .links{
+  display: block;
+  font-size: 1 rem;
+  color:var(--light-grey-color);
+  padding:0.5rem 0;
+}
+
+.groce-footer .groce-footer-container .box .links i{
+  color:var(--orange);
+  padding-right: 0.5rem;
+}
+
+.groce-footer .groce-footer-container .box .links:hover i{
+  padding-right: 2rem;
+}
+
+
+.groce-footer .groce-footer-container .box p{
+  line-height: var(--line-height-md);
+  font-size: 1rem;
+  color:var(--light-grey-color);
+  padding:0.5rem 0;
+}
+
+.groce-footer .groce-footer-container .box .share a{
+  height:4rem;
+  width:4rem;
+  line-height:4rem;
+  border-radius: var(--border-redius-regular);
+  font-size: 2rem;
+  color:var(--black);
+  margin-right: 0.2rem;
+  background: var(--body-background-color);
+  text-align: center;
+}
+
+.groce-footer .groce-footer-container .box .share a:hover{
+  background: var(--orange);
+  color: var(--white);
+}
+
+.groce-footer .groce-footer-container .box .email{
+  width: 80%;
+  margin:0.7rem 0;
+  padding:1rem;
+  border-radius: var(--border-redius-regular);
+  background: var(--body-background-color);
+  font-size: 1rem;
+  color:var(--black);
+  text-transform: none;
 }
 
 
