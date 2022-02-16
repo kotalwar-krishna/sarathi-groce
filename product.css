@@ -64,10 +64,6 @@
 .category .box-container .box:hover h3 {
     color: var(--complementary-color);
 }
-  
-/* .products{
-    margin: 4rem;
-} */
 
 .products .box-container {
     margin-top: var(--margin-2rem);
@@ -76,7 +72,7 @@
     gap: 1.5rem;
 }
 
-.products .box-container .box {
+.products .box-container .card-box {
     position: relative;
     background: var(--white);
     text-align: center;
@@ -84,14 +80,18 @@
     width: 25rem;
 }
   
-.products .box-container .box:hover .material-icons {
+.products .box-container .card-box:hover .material-icons {
     top: 0;
 }
 
-.products .box-container .box .card-ratings{
+.products .box-container .card-box .card-ratings{
     width: fit-content;
 }
-.products .box-container .box .product-card{
+.products .box-container .card-box .product-card{
     padding: 2rem;
 }
 
+.card-badge-green{
+    position: relative;
+    right: 0;
+}
