@@ -46,22 +46,22 @@
     padding: 4rem 0;
 }
   
-.category .box-container .card-box {
+.category .box-container .box {
     text-align: center;
 }
   
-.category .box-container .card-box img {
+.category .box-container .box img {
     height: 15rem;
     width: 25rem;
 }
   
-.category .box-container .card-box h3 {
+.category .box-container .box h3 {
     font-size: 2rem;
     margin: 1rem 0;
     color: var(--light-grey-color);
 }
   
-.category .box-container .card-box:hover h3 {
+.category .box-container .box:hover h3 {
     color: var(--complementary-color);
 }
 
@@ -91,3 +91,7 @@
     padding: 2rem;
 }
 
+.card-badge-green{
+    position: relative;
+    right: 0;
+}
