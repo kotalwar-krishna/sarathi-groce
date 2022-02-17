@@ -1,0 +1,97 @@
+.product-banner-heading{
+    background:url(./images/heading-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+}
+  
+.product-banner-heading h1{
+      color:black;
+      font-size: 4rem;
+}
+
+.products{
+    padding: 2rem;
+    margin: var(--margin-2rem);
+}
+
+.title{
+    border-bottom: 1px var(--light-grey-color) solid;
+}
+
+.title span {
+    color: var(--orange);
+    padding-left: .7rem;
+}
+  
+.title a {
+    margin-left: auto;
+    color: var(--light-grey-color);
+    font-size: 1.5rem;
+}
+  
+.title a:hover {
+    color: var(--complementary-color);
+}
+
+.category{
+    margin: 4rem;
+}
+.category .box-container {
+    display: grid;    
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+    padding: 4rem 0;
+}
+  
+.category .box-container .box {
+    text-align: center;
+}
+  
+.category .box-container .box img {
+    height: 15rem;
+    width: 25rem;
+}
+  
+.category .box-container .box h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: var(--light-grey-color);
+}
+  
+.category .box-container .box:hover h3 {
+    color: var(--complementary-color);
+}
+
+.products .box-container {
+    margin-top: var(--margin-2rem);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.products .box-container .card-box {
+    position: relative;
+    background: var(--white);
+    text-align: center;
+    overflow: hidden;
+    width: 25rem;
+}
+  
+.products .box-container .card-box:hover .material-icons {
+    top: 0;
+}
+
+.products .box-container .card-box .card-ratings{
+    width: fit-content;
+}
+.products .box-container .card-box .product-card{
+    padding: 2rem;
+}
+
+.card-badge-green{
+    position: relative;
+    right: 0;
+}
