@@ -2,6 +2,7 @@
 
 
 @import url(./home-css/modifiction_nav_CL.css);
+@import url(./signup.css);
 
 :root{
   /* colors */
@@ -10,6 +11,7 @@
     --light-grey-color:#666;
     --white:#fff;
     --body-background-color:#eee;
+    --light-color-two:#ddd;
     /* line height */
     --line-height-md:1.8;
     /* border redius */

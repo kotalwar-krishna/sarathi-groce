@@ -1,0 +1,60 @@
+.SignUp-banner-heading{
+    background:url(./images/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+}
+  
+.SignUp-banner-heading h1{
+      color:var(--black);
+      font-size: 4rem;
+}
+
+.SignUp-banner-heading h1 span{
+    color: var(--orange);
+}
+
+.signup-form-container{
+    max-width: 40%;
+    max-height:fit-content;
+    margin: 1.2rem auto;
+    align-items: center; 
+    background-color: var(--white);
+    font-size: 1.4rem;
+}
+
+.signup-form-container .container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.signup-form-container .container input{
+    width: 100%;    
+    padding: 2rem;
+    margin: 0.8rem 0 2.5rem 0;
+    display: inline-block;
+    border: none;
+    background: var(--white);
+  }
+  .signup-form-container .container input:focus {
+    background-color: var(--light-color-two);
+    outline: none;
+  }
+
+  .signup-form-container .container hr {
+    border: 1px solid #0f0f0f;
+    margin-bottom: 3rem;
+  }
+
+  .signin {
+    background-color: var(--light-color-two);
+    text-align: center;
+  }
+
+  .signup-form-container .container a{
+      color: var(--orange);
+      cursor: pointer;
+  }
