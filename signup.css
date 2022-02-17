@@ -1,4 +1,4 @@
-.SignUp-banner-heading{
+.signup-banner-heading{
     background:url(./images/banner.jpg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -7,12 +7,12 @@
     padding-bottom: 8rem;
 }
   
-.SignUp-banner-heading h1{
+.signup-banner-heading h1{
       color:var(--black);
       font-size: 4rem;
 }
 
-.SignUp-banner-heading h1 span{
+.signup-banner-heading h1 span{
     color: var(--orange);
 }
 
