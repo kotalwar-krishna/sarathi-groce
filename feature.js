@@ -14,6 +14,12 @@ document.querySelector('#login-btn').onclick = () =>{
     navbar.classList.remove('active');
 }
 
+document.querySelector('#sign-in-btn').onclick = () =>{
+    loginForm.classList.toggle('active');
+    searchForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
 let navbar = document.querySelector('.navbar-comp');
 
 document.querySelector('#menu-btn').onclick = () =>{
