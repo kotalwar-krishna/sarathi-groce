@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sarathi-grocery</title>
+    <title>sarathi-cart</title>
     
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -23,16 +23,17 @@
 
     <navbar class="navbar-comp">
         <a href="./index.html">home</a>
-        <a href="#features">features</a>
+        <a href="./index.html">features</a>
         <a href="./product.html">products</a>
-        <a href="#">about</a>
+        <a href="#">categories</a>
         <a href="#">review</a>
     </navbar>
 
     <div class="nav-icons">
         <div class="fas fa-bars" id="menu-btn"></div>
         <div class="fas fa-search" id="search-btn"></div>
-        <a href="./cart.html"><div class="fas fa-shopping-cart" id="cart-btn"></div></a>
+        <div class="fas fa-filter" id="filter-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
         <div class="fas fa-user" id="login-btn"></div>
     </div>
 
@@ -52,49 +53,81 @@
 </header>
 <!-- header section ends -->
 
-<!-- Banner Part Home page start -->
-<section class="home-banner" id="home">
+<div class="signup-banner-heading">
+  <h1> Your <span>Cart</span></h1>
+</div>
 
-    <div class="banner-content">
-        <h3>fresh and <span>organic</span> products for your</h3>
-        <p>Better ingredients, better food, and beverages, at low prices.</p>
-        <a href="./product.html" class="primary-button">shop now</a>
-    </div>
-
+<!-- Cart section start -->
+<section class="cart" id="cart-btn">
+    <div class="cart-container">
+    <table class="cart-table" width="100%">
+        <thead>
+            <tr>
+                <td>Remove</td>
+                <td>Photp</td>
+                <td>Product</td>
+                <td>Quantity</td>
+                <td>Price</td>
+                <td>Sub-Total</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                <td><img src="./images/category-5.jpeg" alt="Gheu"></td>
+                <td>Sharbati Gheu 4.5kg</td>
+                <td><input type="number" value="1"></td>
+                <td>₹332</td>
+                <td>₹332</td>
+            </tr>
+            <tr>
+                <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                <td><img src="./images/category-5.jpeg" alt="Gheu"></td>
+                <td>Sharbati Gheu 4.5kg</td>
+                <td><input type="number" value="1"></td>
+                <td>₹332</td>
+                <td>₹332</td>
+            </tr>
+            <tr>
+                <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                <td><img src="./images/category-5.jpeg" alt="Gheu"></td>
+                <td>Sharbati Gheu 4.5kg</td>
+                <td><input type="number" value="1"></td>
+                <td>₹332</td>
+                <td>₹332</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 </section>
-<!-- Banner part Home Page end -->
-
-<section class="features" id="features">
-
-    <h1 class="heading"> our <span>features</span> </h1>
-
-    <div class="box-container">
-
-        <div class="feature-card">
-            <img src="./images/feature-img-1.svg" alt="">
-            <h3>fresh Grocery Storage</h3>
-            <p>a new grocery store designed from the ground up to offer a seamless grocery shopping experience for customers are shopping online.</p>
-            <a href="./product.html" class="primary-button">Shop Now</a>
-        </div>
-
-        <div class="feature-card">
-            <img src="./images/feature-img-2.png" alt="">
-            <h3>free delivery</h3>
-            <p>Come and get a chance to get free shipping on all orders. There is nothing like deadline for this this oofer is for all days.</p>
-            <a href="#" class="primary-button">read more</a>
-        </div>
-
-        <div class="feature-card">
-            <img src="./images/feature-img-3.png" alt="">
-            <h3>easy payments</h3>
-            <p>All Payment Methods are Accepted, for online payment you can use debit card/credit card, netbanking, Upi payment.
-            </p>
-            <a href="#" class="primary-button">read more</a>
-        </div>
-
+<!-- cart section end -->
+<!-- start cart-coupan section and cheackout sction -->
+<section class="cart-checkout">
+    <div class="apply-coupan">
+        <h3>Apply Coupan</h3>
+        <input type="text" placeholder="Enter Your Coupan Code">
+        <button class=" btn primary-btn">Apply</button>
     </div>
-
+    <div class="cart-total">
+        <h3>Cart-Total</h3>
+        <table>
+            <tr>
+                <td>Sub-Total</td>
+                <td>₹996</td>
+            </tr>
+            <tr>
+                <td>Shipping Charge</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td>₹996</td>
+            </tr>
+        </table>
+        <button class="primary-button">Proceed to Cheack-Out</button>
+    </div>
 </section>
+<!-- end cart-coupan section and cheackout sction -->
 
 
 <!-- Footer start-->
@@ -124,12 +157,12 @@
             <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
             <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
             <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> about </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
             <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review </a>
         </div>
 
         <div class="box">
-            <h3>news-letter</h3>
+            <h3>newsletter</h3>
             <p>subscribe for latest updates</p>
             <input type="email" placeholder="your email" class="email">
             <input type="submit" value="subscribe" class="primary-button">

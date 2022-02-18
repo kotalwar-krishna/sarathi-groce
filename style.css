@@ -4,6 +4,7 @@
 @import url(./home-css/modifiction_nav_CL.css);
 @import url(./Screens/product.css);
 @import url(./Screens/signup.css);
+@import url(./Screens/cart.css);
 
 
 
@@ -22,6 +23,8 @@
     --border-redius-regular: 0.5rem;
     /* margin */
     --margin-2rem:2rem;
+    /* border */
+    --border-regular:1px solid black;
     /* other */
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
 }
@@ -259,7 +262,16 @@ section{
       margin:2rem 2.5rem;
       display: block;
   }
-
+    /* cart page */
+    .cart-checkout{
+      flex-direction: column;
+   }
+   .cart-checkout .apply-coupan {
+    width: 100%;
+  }
+  .cart-checkout .cart-total {
+    width: 100%;
+  }
 }
 
 @media (max-width:450px){
@@ -267,9 +279,18 @@ section{
   html{
       font-size: 7px;
   }
-
   .heading{
     font-size: 2rem;
   }
-
+  /* cart page */
+  .cart-checkout{
+     flex-direction: column;
+  }
+  
+  .cart-checkout .apply-coupan {
+    width: 100%;
+  }
+  .cart-checkout .cart-total {
+    width: 100%;
+  }
 }

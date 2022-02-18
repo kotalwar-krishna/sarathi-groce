@@ -1,0 +1,112 @@
+.cart-container{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    overflow-x: auto ;
+}
+
+.cart-container .cart-table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+.cart-container .cart-table thead{
+    border: var(--border-regular);
+    border-right: none;
+    border-left: none;
+}
+
+.cart-container .cart-table thead td{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding: 1.5rem 0;
+}
+
+.cart-container .cart-table tbody tr td{
+    padding-top: 1rem;
+}
+
+.cart-container .cart-table tbody td{
+    font-size: 1.2rem;
+}
+
+.cart-container .cart-table img{
+    width: 6rem;
+}
+
+.cart-container .cart-table td:nth-child(1){
+    width: 10rem;
+    text-align: center;
+}
+
+.cart-container .cart-table td:nth-child(2),
+.cart-container .cart-table td:nth-child(4),
+.cart-container .cart-table td:nth-child(5),
+.cart-container .cart-table td:nth-child(6){
+    width: 14rem;
+    text-align: center;
+}
+
+.cart-container .cart-table td:nth-child(4) input{
+    width: 6rem;
+    padding: 0.8rem 0.5rem 0.8rem 1.2rem;
+}
+
+.cart-container .cart-table td:nth-child(3){
+    width: 22rem;
+    text-align: center;
+}
+
+.cart-checkout{
+    padding: 4rem 14rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cart-checkout .apply-coupan{
+    width: 50%;
+    margin-bottom: 4rem;
+}
+
+.cart-checkout .apply-coupan h3{
+    font-size: 1.5rem;
+    padding-bottom: 1.3rem;
+}
+
+.cart-checkout .apply-coupan input{
+    padding: 1rem 1.6rem;
+    outline: none;
+    width: 60%;
+    margin-right: 1rem;
+    border: var(--border-regular);
+
+}
+
+.cart-checkout .cart-total{
+    width: 50%;
+    margin-bottom: 4rem;
+    border: var(--border-regular);
+    padding: 1rem;
+}
+
+.cart-checkout .cart-total h3{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.cart-checkout .cart-total table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.cart-checkout .cart-total table td {
+    width: 50%;
+    border: var(--border-regular);
+    padding: 1.5rem;
+    font-size: 1.2rem;
+}
