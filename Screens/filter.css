@@ -28,7 +28,7 @@
 }
 
 .clear-filter {
-    color: black;
+    color: var(--black);
 }
 
 .filter-sub-category{
