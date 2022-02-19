@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sarathi-grocery</title>
+    <title>grocery-products</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -55,6 +55,122 @@
             <p>don't have an account <a href="./sign-up.html">Sign Up</a></p>
             <input type="submit" value="login now" class="primary-button">
         </form>
+        <!-- Filter start -->
+        <form action="" class="filter-form">
+            <div class="filter-title">
+                <i class="fa fa-chevron-left"></i>
+                <h3>Filter</h3>
+                <a href="#" class="clear-filter">Clear</a>
+            </div>
+            <div class="filter-category">
+                <h3> Sort By </h3>
+            </div>
+            <div class="filter-sub-category">
+                <div class="grocery-filter">
+                    <a href="#">
+                        <input type="checkbox" id="high-low" />
+                        <label for="high-low">High Price To Low Price</label>
+                    </a>
+                </div>
+
+                <div class="grocery-filter">
+                    <a href="#">
+                        <input type="checkbox" id="low-high" />
+                        <label for="low-high">Low Price To High Price</label>
+                    </a>
+                </div>
+            </div>
+            <div class="filter-category">
+                <h3> Choose Category</h3>
+            </div>
+            <div class="filter-sub-category">
+                    <div class="grocery-filter">
+                        <a href="#">
+                            <input type="checkbox" id="fresh-fruits" />
+                            <label for="fresh-fruits">fresh fruits</label>
+                        </a>
+                    </div>
+
+                    <div class="grocery-filter">
+                        <a href="#">
+                            <input type="checkbox" id="vegetables" />
+                            <label for="vegetables">vegetables</label>
+                        </a>
+                    </div>
+                    <div class="grocery-filter">
+                        <a href="#">
+                            <input type="checkbox" id="organic-spices" />
+                            <label for="organic-spices">organic spices</label>
+                        </a>
+                    </div>
+                    <div class="grocery-filter">
+                        <a href="#">
+                            <input type="checkbox" id="fresh-meat" />
+                            <label for="fresh-meat">fresh meat</label>
+                        </a>
+                    </div>
+                    <div class="grocery-filter">
+                        <a href="#">
+                            <input type="checkbox" id="organic-wheat" />
+                            <label for="organic-wheat">organic wheat</label>
+                        </a>
+                    </div>
+            </div>
+            <div class="filter-category">
+                <h3> Salect Price Range </h3>
+            </div>
+            <div class="min-max-price">
+                <small>Min</small>
+                <small>Max</small>
+            </div>
+            <div class="price-input-box">
+                <input class="price-textbox highlight-box" placeholder=" ₹000" />
+                <p>-</p>
+                <input class="price-textbox highlight-box" placeholder=" ₹999" />
+            </div>
+            <div class="filter-category">
+                <h3> Rating </h3>
+            </div>
+            <div class="filter-sub-category">
+                <div class="grocery-filter">
+                    <a href="#">
+                        <input type="checkbox" id="5-star" />
+                        <label for="5-star">5 Star</label>
+                    </a>
+                </div>
+
+                <div class="grocery-filter">
+                    <a href="#">
+                        <input type="checkbox" id="4star-5star" />
+                        <label for="4star-5star">4 Star - 5 Star</label>
+                    </a>
+                </div>
+                <div class="grocery-filter">
+                    <a href="#">
+                        <input type="checkbox" id="3star-4star" />
+                        <label for="3star-4star">3 Star - 4 Star</label>
+                    </a>
+                </div>
+                <div class="grocery-filter">
+                    <a href="#">
+                        <input type="checkbox" id="2star-3star" />
+                        <label for="2star-3star">2 Star - 3 Star</label>
+                    </a>
+                </div>
+                <div class="grocery-filter">
+                    <a href="#">
+                        <input type="checkbox" id="0star-1star" />
+                        <label for="0star-1star">0 Star - 2 Star</label>
+                    </a>
+                </div>
+        </div>
+        <div class="filter-apply-btn">
+            <button class="primary-button">Apply</button>
+        </div>
+
+        </form>
+
+        <!-- Filter end -->
     </header>
     <!-- header section ends -->
 
@@ -354,7 +470,7 @@
         </div>
     </section>
     <!-- footer end -->
-    <script src="feature.js"></script>
+    <script src="./feature.js"></script>
 </body>
 
 </html>

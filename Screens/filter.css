@@ -1,0 +1,84 @@
+.comp-header .filter-form{
+    position: absolute;
+    top:100%; right:-110%;
+    width:40rem;
+    box-shadow: var(--box-shadow);
+    padding:1.5rem;
+    border-radius: .5rem;
+    background: var(--white);
+    text-align: center;
+}
+
+.comp-header .filter-form.active{
+    right:1rem;
+    transition: .4s linear;
+}
+
+.filter-form .filter-title{
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.filter-form .filter-category{
+    font-size: 1.4rem;
+    text-align: start;
+    padding-left: 1rem ;
+}
+
+.clear-filter {
+    color: black;
+}
+
+.filter-sub-category{
+    text-align: left;
+    margin-left: 4rem;
+    margin-top: 0.8rem;
+    font-size: 1.2rem;   
+}
+
+.filter-sub-category a{
+    color: var(--light-grey-color);
+    font-weight: 300;
+}
+
+.filter-sub-category a input{
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.min-max-price,
+.price-input-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.min-max-price small{
+    margin: 0 5rem;
+}
+
+.price-input-box input{
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.price-textbox{
+    position: relative;
+    border-radius: var(--border-redius-regular);
+    border-color: var(--black);
+    font-size: 1rem;
+    margin-top: 12px;
+    background-color: rgb(233, 221, 221);
+}
+
+.highlight-box:focus {
+    outline: 1px solid var(--black);
+}
+
+.filter-form .filter-apply-btn{
+    display: flex;
+    justify-content: center;
+}
