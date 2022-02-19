@@ -1,0 +1,75 @@
+.whishlist-banner-heading{
+    background:url(../images/heading-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+}
+
+.whishlist-banner-heading h1{
+    color:var(--black);
+    font-size: 4rem;
+}
+
+.whishlist-banner-heading h1 span{
+    color: var(--orange);
+}
+
+.list{
+    margin: 2rem;
+}
+
+.list-title{
+    border-bottom: 1px var(--light-grey-color) solid;
+}
+
+.list-title span {
+    color: var(--orange);
+    padding-left: .7rem;
+}
+  
+.list-title a {
+    margin-left: auto;
+    color: var(--light-grey-color);
+    font-size: 1.5rem;
+}
+  
+.list-title a:hover {
+    color: var(--complementary-color);
+}
+
+.list-category{
+    margin: 4rem;
+}
+
+.whishlist-container{
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.whishlist-container .card-box {
+    position: relative;
+    background: var(--white);
+    text-align: center;
+    overflow: hidden;
+    width: 20rem;
+}
+  
+.whishlist-container .card-box:hover .material-icons {
+    top: 0;
+}
+
+.whishlist-container .card-box .card-ratings{
+    width: fit-content;
+}
+.whishlist-container .card-box .product-card{
+    padding: 2rem;
+}
+
+.card-badge-green{
+    position: relative;
+    right: 0;
+}
