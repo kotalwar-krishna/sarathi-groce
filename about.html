@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sarathi-cart</title>
+    <title>About-sarathi-grocery</title>
     
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -23,7 +23,7 @@
 
     <navbar class="navbar-comp">
         <a href="./index.html">home</a>
-        <a href="./index.html">features</a>
+        <a href="#features">features</a>
         <a href="./product.html">products</a>
         <a href="./about.html">about</a>
         <a href="#">review</a>
@@ -33,7 +33,7 @@
         <div class="fas fa-bars" id="menu-btn"></div>
         <div class="fas fa-search" id="search-btn"></div>
         <a href="./whishlist.html"><div class="fas fa-heart" id="whishlist-btn"></div></a>
-        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <a href="./cart.html"><div class="fas fa-shopping-cart" id="cart-btn"></div></a>
         <div class="fas fa-user" id="login-btn"></div>
     </div>
 
@@ -53,81 +53,23 @@
 </header>
 <!-- header section ends -->
 
-<div class="signup-banner-heading">
-  <h1> Your <span>Cart</span></h1>
+<div class="whishlist-banner-heading">
+    <h1> About <span>Us</span> </h1>
 </div>
 
-<!-- Cart section start -->
-<section class="cart" id="cart-btn">
-    <div class="cart-container">
-    <table class="cart-table" width="100%">
-        <thead>
-            <tr>
-                <td>Remove</td>
-                <td>Photp</td>
-                <td>Product</td>
-                <td>Quantity</td>
-                <td>Price</td>
-                <td>Sub-Total</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                <td><img src="./images/category-5.jpeg" alt="Gheu"></td>
-                <td>Sharbati Gheu 4.5kg</td>
-                <td><input type="number" value="1"></td>
-                <td>₹332</td>
-                <td>₹332</td>
-            </tr>
-            <tr>
-                <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                <td><img src="./images/category-5.jpeg" alt="Gheu"></td>
-                <td>Sharbati Gheu 4.5kg</td>
-                <td><input type="number" value="1"></td>
-                <td>₹332</td>
-                <td>₹332</td>
-            </tr>
-            <tr>
-                <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                <td><img src="./images/category-5.jpeg" alt="Gheu"></td>
-                <td>Sharbati Gheu 4.5kg</td>
-                <td><input type="number" value="1"></td>
-                <td>₹332</td>
-                <td>₹332</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-</section>
-<!-- cart section end -->
-<!-- start cart-coupan section and cheackout sction -->
-<section class="cart-checkout">
-    <div class="apply-coupan">
-        <h3>Apply Coupan</h3>
-        <input type="text" placeholder="Enter Your Coupan Code">
-        <button class=" btn primary-btn">Apply</button>
+<section class="about">
+    <div class="image">
+        <img src="./images/about-img.jpg" alt="about-img">
     </div>
-    <div class="cart-total">
-        <h3>Cart-Total</h3>
-        <table>
-            <tr>
-                <td>Sub-Total</td>
-                <td>₹996</td>
-            </tr>
-            <tr>
-                <td>Shipping Charge</td>
-                <td>Free</td>
-            </tr>
-            <tr>
-                <td><strong>Total</strong></td>
-                <td>₹996</td>
-            </tr>
-        </table>
-        <button class="primary-button">Proceed to Cheack-Out</button>
+    <div class="content">
+        <span>welcome to SARATHI - GROCERIES</span>
+        <h3>fresh and organic groceries and cooking related products</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vel sequi nostrum quae nobis non quaerat nisi voluptatibus recusandae reprehenderit tempore eligendi, eum quibusdam perferendis dicta, incidunt dolores nemo ex.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem cumque molestiae blanditiis deleniti aspernatur, ab tempora quisquam sapiente commodi hic.</p>
+        <a href="#" class="primary-button">read more</a>
     </div>
 </section>
-<!-- end cart-coupan section and cheackout sction -->
+
 
 
 <!-- Footer start-->
@@ -157,12 +99,12 @@
             <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
             <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
             <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> about </a>
             <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review </a>
         </div>
 
         <div class="box">
-            <h3>newsletter</h3>
+            <h3>news-letter</h3>
             <p>subscribe for latest updates</p>
             <input type="email" placeholder="your email" class="email">
             <input type="submit" value="subscribe" class="primary-button">
