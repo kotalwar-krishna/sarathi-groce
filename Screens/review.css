@@ -1,0 +1,15 @@
+.review {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin: 4rem;
+    font-size: 1rem;
+}
+
+.review .feature-card{
+    margin: 2rem;
+}
+
+.review .feature-card h3{
+    font-size: 1.4rem;
+}
